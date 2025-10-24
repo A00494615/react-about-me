@@ -9,8 +9,9 @@ const AboutMe: React.FC<AboutMeProps> = ({ data }) => {
   return (
     <div className="about-me">
       <div className="header-section">
-        <img src="/programmer.png" alt="Programmer" className="profile-image" width="100" />
+        <h1>About Me</h1>
       </div>
+        <img src="/programmer.png" alt="Programmer" className="profile-image" width="100" />
       <div className="content">
         <h2>Hi, I'm {data.name}</h2>
         <p>

@@ -1,7 +1,8 @@
 import React from 'react';
 import AboutMe from './components/AboutMe';
-import type { PersonalInfo } from './types';
+import type { PersonalInfo, TownInfo } from './types';
 import './App.css';
+import MyTown from './components/MyTown';
 
 const App: React.FC = () => {
   const personalInfo: PersonalInfo = {
@@ -12,9 +13,19 @@ const App: React.FC = () => {
     programReason: "I want to enhance my data skills and pursue a career in data engineering."
   };
 
+  const townInfo: TownInfo = {
+    name: "Lumbini",
+    description: [
+      "Lumbini is a famous pilgrimage site",
+      "located in the Rupandehi District of Nepal.",
+      "It is the birthplace of Siddhartha Gautama, who became the Buddha."
+    ]
+  };
+
   return (
     <div className="app">
       <AboutMe data={personalInfo} />
+      <MyTown data={townInfo} />
     </div>
   );
 };

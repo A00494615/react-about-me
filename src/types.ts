@@ -5,3 +5,8 @@ export interface PersonalInfo {
   company: string;
   programReason: string;
 }
+
+export interface TownInfo {
+  name: string;
+  description: string[];
+}

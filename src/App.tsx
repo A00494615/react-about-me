@@ -19,23 +19,20 @@ const App: React.FC = () => {
 
   const townInfo: TownInfo = {
     name: "Lumbini",
-    description: [
-      "Lumbini is a famous pilgrimage site",
-      "located in the Rupandehi District of Nepal.",
-      "It is the birthplace of Siddhartha Gautama, who became the Buddha."
-    ]
+    description: "Lumbini is a famous pilgrimage site located in the Rupandehi District of Nepal. It is the birthplace of Siddhartha Gautam, who became the Buddha."
+
   };
 
   return (
     <div className="app">
       <nav className="navigation">
-        <button 
+        <button
           className={`nav-button ${currentView === 'about' ? 'active' : ''}`}
           onClick={() => setCurrentView('about')}
         >
           About Me
         </button>
-        <button 
+        <button
           className={`nav-button ${currentView === 'town' ? 'active' : ''}`}
           onClick={() => setCurrentView('town')}
         >

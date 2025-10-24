@@ -8,7 +8,7 @@ export interface PersonalInfo {
 
 export interface TownInfo {
   name: string;
-  description: string[];
+  description: string;
 }
 
 export interface WeatherData {

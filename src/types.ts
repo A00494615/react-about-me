@@ -10,3 +10,8 @@ export interface TownInfo {
   name: string;
   description: string[];
 }
+
+export interface WeatherData {
+  temperatureC: number;
+  temperatureF: number;
+}

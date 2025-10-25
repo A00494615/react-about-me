@@ -2,6 +2,8 @@
 
 A React TypeScript app to show about me and my town with its current temperature.
 
+**Live Demo:** [https://react-about-me-sandy.vercel.app](https://react-about-me-sandy.vercel.app)
+
 ## Quick Start
 
 ```bash

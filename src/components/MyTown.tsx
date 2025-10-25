@@ -61,7 +61,7 @@ const MyTown: React.FC<MyTownProps> = ({ data }) => {
         <div className="my-town">
             <div className="header-section">
                 <h1>My Town</h1>
-                <img src="public/Lumbini.jpg" alt="Lumbini" className="town-image" />
+                <img src="/Lumbini.jpg" alt="Lumbini" className="town-image" />
             </div>
             <div className="content">
                 <h2>I live in {data.name}.</h2>
@@ -93,7 +93,7 @@ const MyTown: React.FC<MyTownProps> = ({ data }) => {
                     {weather && (
                         <div className="weather-info">
                             <img
-                                src={`/public/${getWeatherImage(weather.temperatureC)}`}
+                                src={`/${getWeatherImage(weather.temperatureC)}`}
                                 alt="Weather"
                                 className="weather-image"
                             />
